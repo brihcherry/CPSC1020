@@ -15,7 +15,7 @@ class Date{
   private:
     int day = 1;
     int day = 1;
-   int year = 2021;
+     int year = 2021;
 
   public:
     // default constructor sets day to jan 1, 2021
