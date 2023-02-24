@@ -13,7 +13,9 @@ using namespace std;
 
 class Date{
   private:
-    int day, month, year;
+    int day = 1;
+    int day = 1;
+   int year = 2021;
 
   public:
     // default constructor sets day to jan 1, 2021
