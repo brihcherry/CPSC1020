@@ -72,7 +72,7 @@ int main(int argc, char const *argv[]){
         for (int x = 0; x < questions.size(); x++)
         {
             // print question
-            cout << questions[x].getQuestion() << endl;
+            cout << questions[x].getQuestion() << " : ";
             // take user input
             getline(cin, userAnswer);
             // compare input to the actual answer from .txt 
