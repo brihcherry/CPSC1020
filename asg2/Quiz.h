@@ -19,7 +19,10 @@ class Quiz{
     // input constructor uses input to set members and removes a space at the end 
     // of the string, if there is one
     Quiz(std::string q, std::string a) : question(q), answer(a) 
-    {answer = a.substr(0, a.find_last_not_of(" \t\n\r\f\v") + 1);}
+    {
+        answer = a.substr(0, a.find_last_not_of(" \t\n\r\f\v") + 1);
+        question = q.substr(0, q.find_last_not_of(" \t\n\r\f\v") + 1);
+    } // remove unwanted characters from string
 
     // getters
     std::string getQuestion () {return question;}
